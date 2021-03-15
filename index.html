@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<Html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>星空探索アプリ</title>
+    <link rel="stylesheet" href="starview.css">
+  </head>
+
+  <body>
+    <!-- 画像、ロゴ、ボタン -->
+    <div class="screen">
+      <div class="logo">星空探索アプリ</div>
+      <div class="element">
+        <div class="btn" id="btnMap">現在地から探す</div>
+        <div class="btn" id="btnStar">星から探す</div>
+        <div class="menu" id="menu">
+          <ul class="list">
+            <li id="s1"><a class="aBtn" href="#star">カノープス</a></li>
+            <li id="s2"><a class="aBtn" href="#star">アルクトゥルス</a></li>
+            <li id="s3"><a class="aBtn" href="#star">ベテルギウス</a></li>
+            <li id="s4"><a class="aBtn" href="#star">プロキオン　</a></li>
+            <li id="s5"><a class="aBtn" href="#star">　ベガ　　</a></li>
+            <li id="s6"><a class="aBtn" href="#star">　スピカ　　</a></li>
+          </ul>
+        </div>
+        <div class="btn" id="btnConst">星座から探す</div>
+        <div class="menu" id="menu2">
+          <ul class="list">
+            <li id="c1"><a class="aBtn" href="#con">かに座</a></li>
+            <li id="c2"><a class="aBtn" href="#con">おひつじ座</a></li>
+            <li id="c3"><a class="aBtn" href="#con">オリオン座</a></li>
+            <li id="c4"><a class="aBtn" href="#con">こいぬ座</a></li>
+            <li id="c5"><a class="aBtn" href="#con">おうし座</a></li>
+            <li id="c6"><a class="aBtn" href="#con">こぐま座</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- googleMaps -->
+    <div class="googleMaps">
+      <div id="map" class="map">
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7477985333135!2d139.7432442155545!3d35.65858483882043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1615773329243!5m2!1sja!2sjp" width="600" height="800" allowfullscreen="" loading="lazy"></iframe> -->
+      </div>
+      <!-- <div class="address">
+        <h1>住所</h1>
+        <textarea class="white" id="address1"></textarea>
+      </div> -->
+    </div>
+    
+    <a name="star"></a>
+    
+    <!-- 星の情報 -->
+    <div class="starrySky">
+      <div class="star">
+        <p id="starName" class="starName">星の名前</p>
+        <p id="starDes" class="starDes">説明:</p>
+        <p id="starDes2" class="starDes">豆知識:</p>
+      </div>
+    </div>
+    
+    <a name="con"></a>
+
+    <!-- 星座の情報 -->
+    <div class="starWatch">
+      <div class="img">
+        <img id="consteImg" class="consteImg" src="yozora.jpeg"></img>
+      </div>
+      <div class="conste">
+        <p id="consteName" class="consteName">星座の名前</p>
+        <p id="consteDes" class="consteDes">星座の説明</p>
+      </div>
+    </div>
+
+  </body>
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="starview.js"></script>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4vIECS6PI5MBN96t9kSl43UiQD-yUlcI&callback=initMap"></script>
+</Html>
